@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/lbCita"
+        android:layout_width="331dp"
+        android:layout_height="170dp"
+        android:layout_x="26dp"
+        android:layout_y="160dp"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/lbPersonaje"
+        android:layout_width="328dp"
+        android:layout_height="61dp"
+        android:layout_x="23dp"
+        android:layout_y="334dp"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+
+</AbsoluteLayout>
