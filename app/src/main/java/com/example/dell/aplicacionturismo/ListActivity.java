@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class ListActivity  extends AppCompatActivity {
     android.widget.ListView ListView;
-    String[] datos = new String[]{"Plaza de la Independencia (El Tinaco)","Museo Ferrocarrilero","Playa el Cochorit"};
+    String[] datos = new String[]{"Plaza de la Independencia (El Tinaco)", "Monumento Centenario (Locomotora de Vapor", "Museo Ferrocarrilero","Playa el Cochorit"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +27,10 @@ public class ListActivity  extends AppCompatActivity {
         ListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView cita;
-                TextView personaje;
-                ImageView imagen;
+
                 if(position==0){
-                    setContentView(R.layout.activity_info);
-                    cita = (TextView) findViewById(R.id.lbCita);
-                    personaje = (TextView) findViewById(R.id.lbPersonaje);
-                    //imagen = (ImageView) findViewById(R.id.personajeImg);
-                    //imagen.setImageResource(R.drawable.higalgo);
-                    cita.setText("´´"+"Prueba"+"´´");
-                    personaje.setText("prueba");
+                    Intent tinaco=new Intent(ListActivity.this,Tinaco.class);
+                    startActivity(tinaco);
                 }
             }
 
